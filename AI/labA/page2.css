@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    width: 90%;
+    background-image: url('poker2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+    border: 5px solid #333;
+}
+
+header {
+    font-size: 2em;
+    color: #F1C40F;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 3px solid #F1C40F;
+    width: 100%;
+    padding: 10px;
+}
+
+h1 {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+h2 {
+    font-style: italic;
+    color: #DAA520;
+}
+
+h3 {
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.left-column, .right-column {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    text-shadow: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+footer, nav {
+    background-color: #333;
+    color: #F1C40F;
+    padding: 15px 0;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.nav-link {
+    color: #F1C40F;
+    font-size: 18px;
+    padding: 5px 20px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    padding: 5px 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #F1C40F;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+p {
+    color: red; /* Zaktualizowany kolor tekstu */
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    body, .left-column, .right-column {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer, nav {
+        padding: 10px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+}
