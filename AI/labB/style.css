@@ -1,0 +1,139 @@
+/* Resetowanie domyślnych stylów */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styl dla całego ciała dokumentu */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Główny kontener aplikacji */
+.task-app {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1000px;
+    height: 90%;
+    overflow: auto;
+}
+
+/* Styl dla pola wyszukiwania */
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Lista zadań */
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    max-height: calc(100% - 150px);
+    overflow-y: auto;
+}
+
+#taskList li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#taskList li.hide {
+    display: none;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+}
+
+.task-text {
+    margin-right: 5px;
+}
+
+/* Styl dla podświetlania wyszukiwanego tekstu */
+.highlight {
+    background-color: yellow;
+}
+
+/* Kontener dodawania nowego zadania */
+.add-task {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#taskInput, #taskDate {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#addTaskButton {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addTaskButton:hover {
+    background-color: #218838;
+}
+
+/* Styl dla przycisku usuwania */
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Style dla pól edycji */
+.edit-task-input, .edit-date-input {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Responsywność dla urządzeń mobilnych */
+@media (max-width: 600px) {
+    .add-task {
+        flex-direction: column;
+    }
+
+    #taskInput, #taskDate {
+        width: 100%;
+    }
+
+    #addTaskButton {
+        width: 100%;
+    }
+}
