@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Puzzle z mapy</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Plik stylów -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="main-container">
+  <!-- Kontener na fragmenty po lewej stronie -->
+  <div id="left-fragments">
+    <!-- 8 ramek na fragmenty -->
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+  </div>
+
+  <!-- Kontener centralny -->
+  <div id="center-container">
+    <!-- Siatka podzielona na 16 części -->
+    <div id="grid-container">
+      <!-- 16 elementów siatki z identyfikatorami -->
+      <div class="grid-item" id="cell-0"></div>
+      <div class="grid-item" id="cell-1"></div>
+      <div class="grid-item" id="cell-2"></div>
+      <div class="grid-item" id="cell-3"></div>
+
+      <div class="grid-item" id="cell-4"></div>
+      <div class="grid-item" id="cell-5"></div>
+      <div class="grid-item" id="cell-6"></div>
+      <div class="grid-item" id="cell-7"></div>
+
+      <div class="grid-item" id="cell-8"></div>
+      <div class="grid-item" id="cell-9"></div>
+      <div class="grid-item" id="cell-10"></div>
+      <div class="grid-item" id="cell-11"></div>
+
+      <div class="grid-item" id="cell-12"></div>
+      <div class="grid-item" id="cell-13"></div>
+      <div class="grid-item" id="cell-14"></div>
+      <div class="grid-item" id="cell-15"></div>
+    </div>
+
+    <!-- Kontener na przyciski -->
+    <div id="buttons-container">
+      <button id="locate-button">Moja lokalizacja</button>
+      <button id="download-map-button">Pobierz Mapę</button>
+    </div>
+
+    <!-- Kontener na mapę -->
+    <div id="map-container">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <!-- Kontener na fragmenty po prawej stronie -->
+  <div id="right-fragments">
+    <!-- 8 ramek na fragmenty -->
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+    <div class="fragment-placeholder"></div>
+  </div>
+</div>
+
+<!-- Skrypty -->
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- Biblioteka leaflet-image -->
+<script src="https://unpkg.com/leaflet-image/leaflet-image.js"></script>
+<!-- Plik JavaScript -->
+<script src="app.js"></script>
+
+</body>
+</html>
